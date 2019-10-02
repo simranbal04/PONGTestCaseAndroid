@@ -18,7 +18,6 @@ public class GameEngine extends SurfaceView implements Runnable {
     // -----------------------------------
     // ## ANDROID DEBUG VARIABLES
     // -----------------------------------
-
     // Android debug variables
     final static String TAG="PONG-GAME";
 
@@ -224,12 +223,8 @@ public class GameEngine extends SurfaceView implements Runnable {
             // increase the game score!
             this.score = this.score + 50;
 
-
         }
-
-
         // 2. if ball misses racket, then keep going down
-
         // 3. if ball falls off bottom of screen, restart the ball in middle
     }
 
@@ -237,7 +232,6 @@ public class GameEngine extends SurfaceView implements Runnable {
     public void redrawSprites() {
         if (this.holder.getSurface().isValid()) {
             this.canvas = this.holder.lockCanvas();
-
             //----------------
             // Put all your drawing code in this section
 
